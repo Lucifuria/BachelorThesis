@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1AD46EDE-C7AE-4AC5-BB07-C69510CD9B4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Visualization</RootNamespace>
+    <AssemblyName>VizualizaciaKonstrukcnychUloh</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Lucka\OneDrive\Skola\Vyucovanie\RP+BP\vizualizator_Magurova\VizualizaciaKonstrukcnychUloh\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\VizualizaciaKonstrukcnychUloh.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>36286E824AC57EEF9060A0075C2EECEF77C70839</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Visualization_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Angle.cs" />
+    <Compile Include="Circle.cs" />
+    <Compile Include="Drawing.cs" />
+    <Compile Include="FormForAngle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForAngle.Designer.cs">
+      <DependentUpon>FormForAngle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormForCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForCircle.Designer.cs">
+      <DependentUpon>FormForCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormForLine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForLine.Designer.cs">
+      <DependentUpon>FormForLine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormForMacros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForMacros.Designer.cs">
+      <DependentUpon>FormForMacros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormForPoint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForPoint.Designer.cs">
+      <DependentUpon>FormForPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeometricObject.cs" />
+    <Compile Include="LineSegment.cs" />
+    <Compile Include="Macros.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reader.cs" />
+    <Compile Include="Visualizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Visualizer.Designer.cs">
+      <DependentUpon>Visualizer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Line.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormForAngle.resx">
+      <DependentUpon>FormForAngle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormForCircle.resx">
+      <DependentUpon>FormForCircle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormForLine.resx">
+      <DependentUpon>FormForLine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormForMacros.resx">
+      <DependentUpon>FormForMacros.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormForPoint.resx">
+      <DependentUpon>FormForPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visualizer.resx">
+      <DependentUpon>Visualizer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Visualization_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WIN_20160310_00_43_01_Pro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pointsmall1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\linesegment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\halfline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\partofcircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\angle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\macros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\forth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons\okbutton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttons.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelsmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circlesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\line.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linesegment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linesegmentsmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pointsmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halflinesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partofcirclesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anglesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backsmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emptysmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forthsmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\halfline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\macrossmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oksmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\partofcircle.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
